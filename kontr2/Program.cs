@@ -6,3 +6,4 @@ class Program
     {
          Console.Write("Введите элементы массива через пробел: ");
         string[] initialArray = Console.ReadLine().Split(' ');
+          string[] resultArray = CreateShortStringArray(initialArray);
