@@ -7,3 +7,8 @@ class Program
          Console.Write("Введите элементы массива через пробел: ");
         string[] initialArray = Console.ReadLine().Split(' ');
           string[] resultArray = CreateShortStringArray(initialArray);
+          Console.WriteLine("Новый массив: [{0}]", string.Join(", ", resultArray));
+    }
+
+    static string[] CreateShortStringArray(string[] initialArray)
+    {
