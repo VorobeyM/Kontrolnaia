@@ -20,4 +20,17 @@ class Program
                 shortStringCount++;
             }
         }
+          string[] resultArray = new string[shortStringCount];
+        int index = 0;
+        foreach (string s in initialArray)
+        {
+            if (s.Length <= 3)
+            {
+                resultArray[index++] = s;
+            }
+        }
+
+        return resultArray;
+    }
+}
 
