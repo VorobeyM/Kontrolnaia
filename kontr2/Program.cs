@@ -12,3 +12,12 @@ class Program
 
     static string[] CreateShortStringArray(string[] initialArray)
     {
+         int shortStringCount = 0;
+        foreach (string s in initialArray)
+        {
+            if (s.Length <= 3)
+            {
+                shortStringCount++;
+            }
+        }
+
